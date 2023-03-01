@@ -35,7 +35,7 @@ export async function saveNote(note: NoteCreate): Promise<void> {
   });
 }
 
-export async function viewNotes(): Promise<Note[]> {
+export async function getNotes(): Promise<Note[]> {
   const result = await client.query({
     query: gql`
       query GetNotes {
