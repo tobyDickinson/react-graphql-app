@@ -34,7 +34,7 @@ npm start
 
 ## General Comments and Next Steps
 
-- `src/App.tsx` is the route of the application and should be the first place to look when navigating the repo.
+- `src/App.tsx` is the root of the application and should be the first place to look when navigating the repo.
 
 - The app uses react-router to render different pages via the Navbar.
 
