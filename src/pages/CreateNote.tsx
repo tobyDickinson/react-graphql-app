@@ -38,6 +38,7 @@ export default class CreateNotePage extends React.Component<
           rows={4}
           onChange={this.handleTextFieldChange}
         />
+        <br/><br/>
 
         <LoadingButton
           size="small"
