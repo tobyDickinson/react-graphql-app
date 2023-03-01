@@ -33,7 +33,7 @@ export default function MenuA() {
         <ListItemIcon>
           <Folder />
         </ListItemIcon>
-        <ListItemText primary={"View Note"} />
+        <ListItemText primary={"View Notes"} />
       </ListItem>
     </List>
   );

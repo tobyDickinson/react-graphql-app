@@ -35,7 +35,7 @@ export default function Menu() { // TODO: Refactor these menus to use the same c
         <ListItemIcon>
           <Folder />
         </ListItemIcon>
-        <ListItemText primary={"View Note"} />
+        <ListItemText primary={"View Notes"} />
       </ListItem>
     </List>
   );
