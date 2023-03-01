@@ -18,12 +18,11 @@ export default class CreateNotePage extends React.Component<
 
   async handleClick() {
     this.setState({ loading: true });
-    await saveNote(this.state.noteContent);
+    await saveNote({ text: this.state.noteContent });
     this.setState({ loading: false });
   }
 
   handleTextFieldChange(e: any) {
-    console.log(typeof e);
     this.setState({
       noteContent: e.target.value,
     });
