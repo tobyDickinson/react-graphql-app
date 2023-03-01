@@ -1,46 +1,45 @@
-# Getting Started with Create React App
+# Notes App
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+## Getting Started
 
-## Available Scripts
+### Pre-requisistes
 
-In the project directory, you can run:
+- Node 16
+- npm 8
 
-### `npm start`
+### Quick Start
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+1. Install dependencies
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
+```bash
+npm install
+```
 
-### `npm test`
+2. Start the development server
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+```bash
+npm start
+```
 
-### `npm run build`
+3. Explore the web page!
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+## Repository Structure
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+- `public` - Static files used by web server
+- `src`
+  - `components` - React components rendered to pages
+  - `menus` - Menu react components
+  - `pages` - Main react page components navigatable via menus
+  - `repository` - Data layer to connect to graphql
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+## General Comments and Next Steps
 
-### `npm run eject`
+- The app uses react-router to navigate between pages via the Navbar.
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
+- Many files were automatically generated using `react-scripts` which I used to set up the repo.
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+- The repo contains some todos, particularly around refactoring some components.
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
+- I excluded testing as I ran out of time but I would want better tests for this before progressing.
 
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
+- There also seems to be a better pattern for data access via the `ApolloProvider` [component](https://www.apollographql.com/docs/react/get-started/#step-4-connect-your-client-to-react). Given more time I would look to refactor the repository layer to use this instead.
