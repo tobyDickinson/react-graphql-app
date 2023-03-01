@@ -7,8 +7,8 @@ import Toolbar from "@mui/material/Toolbar";
 import PropTypes from "prop-types";
 import React, { useEffect, useState } from "react";
 import { useLocation } from "react-router-dom";
-import MenuA from "./menus/MenuA";
-import MenuB from "./menus/MenuB";
+import MenuA from "../menus/MenuA";
+import MenuB from "../menus/MenuB";
 
 const drawerWidth = 220;
 function Navbar(props: any) {
