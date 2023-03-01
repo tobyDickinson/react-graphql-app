@@ -5,7 +5,8 @@ import ListItemIcon from "@mui/material/ListItemIcon";
 import ListItemText from "@mui/material/ListItemText";
 import { Link, useLocation } from "react-router-dom";
 
-export default function Menu() { // TODO: Refactor these menus to use the same component, fix deprecated list item attribs
+export default function Menu() {
+  // TODO: Refactor these menus to use the same component, fix deprecated list item attribs
   const location = useLocation();
   const path = location.pathname;
   return (

@@ -49,7 +49,7 @@ function Navbar(props: any) {
         sx={{
           bgcolor: "#192846",
           width: "100%",
-          zIndex: "999998"
+          zIndex: "999998",
         }}
       >
         <Toolbar>
@@ -76,14 +76,14 @@ function Navbar(props: any) {
           open={mobileOpen}
           onClose={handleDrawerToggle}
           ModalProps={{
-            keepMounted: true // Better open performance on mobile.
+            keepMounted: true, // Better open performance on mobile.
           }}
           sx={{
             display: { xs: "block", sm: "none" },
             "& .MuiDrawer-paper": {
               boxSizing: "border-box",
-              width: drawerWidth
-            }
+              width: drawerWidth,
+            },
           }}
         >
           {drawer}
@@ -94,8 +94,8 @@ function Navbar(props: any) {
             display: { xs: "none", sm: "block" },
             "& .MuiDrawer-paper": {
               boxSizing: "border-box",
-              width: drawerWidth
-            }
+              width: drawerWidth,
+            },
           }}
           open
         >
@@ -109,7 +109,7 @@ function Navbar(props: any) {
 }
 
 Navbar.propTypes = {
-  window: PropTypes.func
+  window: PropTypes.func,
 };
 
 export default Navbar;

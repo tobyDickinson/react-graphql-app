@@ -1,9 +1,9 @@
-import { Route, Routes } from 'react-router-dom';
-import './App.css';
-import ContentHolder from './ContentHolder';
-import Navbar from './Navbar';
-import CreateNotePage from './pages/CreateNote';
-import ViewNotesPage from './pages/ViewNotes';
+import { Route, Routes } from "react-router-dom";
+import "./App.css";
+import ContentHolder from "./ContentHolder";
+import Navbar from "./Navbar";
+import CreateNotePage from "./pages/CreateNote";
+import ViewNotesPage from "./pages/ViewNotes";
 
 function App() {
   return (

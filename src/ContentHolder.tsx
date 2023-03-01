@@ -7,8 +7,8 @@ const ContentHolder = styled("div")({
   marginTop: "5px",
   "@media screen and (min-width: 600px)": {
     width: `calc(100% - ${drawerWidth}px)`,
-    marginLeft: drawerWidth
-  }
+    marginLeft: drawerWidth,
+  },
 });
 
 export default ContentHolder;
