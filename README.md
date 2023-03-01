@@ -34,9 +34,11 @@ npm start
 
 ## General Comments and Next Steps
 
-- The app uses react-router to navigate between pages via the Navbar.
+- `src/App.tsx` is the route of the application and should be the first place to look when navigating the repo.
 
-- Many files were automatically generated using `react-scripts` which I used to set up the repo.
+- The app uses react-router to render different pages via the Navbar.
+
+- Many files were automatically generated using `react-scripts` which was used to set up the repo.
 
 - The repo contains some todos, particularly around refactoring some components.
 
