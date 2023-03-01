@@ -1,4 +1,4 @@
 
 export default function ViewNotesPage() {
-  return <div>Placeholder for view notes</div>;
+  return <div>Placeholder for View Notess</div>;
 }
